@@ -44,7 +44,8 @@ body {
     flex-direction: column;
     flex-basis: 1000px;
     align-items: center;
-    row-gap: 2em;
+    justify-content: center;
+    row-gap: 2rem;
     border: 1px solid red;
 }
 /*Area Specific*/
@@ -87,6 +88,28 @@ body {
                 color: white;
             }
         }
+    /* Main */
+        .intro-text {
+            color: var(--color-purple);
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        #question-intro {
+            padding: 30px;
+            a {
+                text-decoration: none;
+                color: var(--color-purple);
+            }
+        }
+        .intro-inner-container {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 30rem;
+            justify-content: center;
+            row-gap: 1.5rem;
+            text-align: center;
+        }
+
 /* Media queries */
 
 @media screen and (min-width: 768px) {
