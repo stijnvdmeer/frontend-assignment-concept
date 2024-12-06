@@ -19,13 +19,15 @@
 }
 body {
     font-size: 12px;
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 /*reusable classes*/
 
 .outer-container {
     display: flex;
     flex-direction: row;
-    border: 1px solid red;
     justify-content: center;
     width: 100%;
 }
@@ -36,6 +38,14 @@ body {
     align-items: flex-end;
     justify-content: center;
 
+}
+.inner-container-small {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 1000px;
+    align-items: center;
+    row-gap: 2em;
+    border: 1px solid red;
 }
 /*Area Specific*/
     /*header*/
@@ -59,8 +69,24 @@ body {
             text-align: center;
             font-size : 1.5rem;
         }
+        h1 {
+            font-family: "Merriweather", serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 3rem;
+        }
+        .introblock {
+            padding-top: 50px;
+            text-align: center;
 
-        W
+            button {
+                background-color: var(--color-pink);
+                width: fit-content;
+                padding: 20px;
+                border-radius: 25px;
+                color: white;
+            }
+        }
 /* Media queries */
 
 @media screen and (min-width: 768px) {
