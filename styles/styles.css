@@ -32,6 +32,9 @@ a {
     text-decoration: none;
     color: var(--color-purple);
 }
+article {
+    padding: 2rem;
+}
 /*reusable classes*/
 
 .outer-container {
@@ -120,9 +123,7 @@ a {
                 text-align: center;
             }
         /* section 2 (case studies) */
-            article {
-                padding: 2rem;
-            }
+
             .casestudies {
                 background-color: var(--bg-color-article-lightgrey);
             }
