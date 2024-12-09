@@ -71,6 +71,17 @@ form {
         height: 10rem;
     }
 }
+footer {
+    background-color: var(--textcolor-standard-black);
+    height: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    color: white;
+}
 /*reusable classes*/
 
 .outer-container {
@@ -196,6 +207,7 @@ form {
                 justify-content: space-between;
                 row-gap: 1.5rem;
                 padding-top: 3rem;
+                padding-bottom: 3rem;
             }
         /* Section 4 (Form) */
             .form-section {
