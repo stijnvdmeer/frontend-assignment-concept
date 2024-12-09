@@ -32,8 +32,28 @@ a {
     text-decoration: none;
     color: var(--color-purple);
 }
-article {
-    padding: 2rem;
+header {
+    background-color: var(--color-blue );
+    color: white;
+}
+nav {
+    height: 5rem;
+    padding: 10px 0 10px 0;
+}
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:35rem;
+    column-gap: 0.5rem  ;
+}
+li {
+    text-align: center;
+    font-size : 1.5rem;
+}
+h1 {
+    font-size: 3rem;
 }
 /*reusable classes*/
 
@@ -51,14 +71,6 @@ article {
 
     justify-content: center;
 }
-.inner-container-large-nav {
-    display: flex;
-    flex-direction: column;
-    width: 95%;
-    align-items: flex-end;
-    justify-content: center;
-}
-
 .inner-container-small {
     display: flex;
     flex-direction: column;
@@ -67,31 +79,53 @@ article {
     justify-content: center;
     row-gap: 2rem;
 }
+.intro-text {
+    color: var(--color-purple);
+    font-size: 1.5rem;
+    text-align: center;
+}
+.case-study {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 2rem;
+}
+.case-study-text {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 20em;
+    justify-content: center;
+    row-gap: 1.5rem;
+    img {
+        height: 50px;
+        width: 50px;
+        flex-grow: 0;
+    }
+}
+
+.services-article {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+    padding: 1rem;
+
+    border: 1px solid var(--color-purple);
+    img {
+        height: 50px;
+        width: 50px;
+        flex-grow: 0;
+    }
+    h2 {
+        color: var(--color-purple);
+    }
+    p {
+        color: var(--textcolor-article-grey);
+        font-size: 12px;
+    }
+}
 /*Area Specific*/
     /*header*/
-        header {
-            background-color: var(--color-blue );
-            color: white;
-        }
-        nav {
-            height: 5rem;
-            padding: 10px 0 10px 0;
-        }
-        ul {
-            list-style: none;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            width:35rem;
-            column-gap: 0.5rem  ;
-        }
-        li {
-            text-align: center;
-            font-size : 1.5rem;
-        }
-        h1 {
-            font-size: 3rem;
-        }
         .introblock {
             padding-top: 50px;
             text-align: center;
@@ -104,13 +138,16 @@ article {
                 color: white;
             }
         }
+        .inner-container-large-nav {
+            display: flex;
+            flex-direction: column;
+            width: 95%;
+            align-items: flex-end;
+            justify-content: center;
+        }
     /* Main */
         /* section 1 (introduction) */
-            .intro-text {
-                color: var(--color-purple);
-                font-size: 1.5rem;
-                text-align: center;
-            }
+
             #question-intro {
                 padding: 30px;
             }
@@ -127,31 +164,24 @@ article {
             .casestudies {
                 background-color: var(--bg-color-article-lightgrey);
             }
-            .case-study {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-            }
+
             #reverse {
                 flex-direction: row-reverse;
             }
-            .case-study-text {
+        /* Section 3 (Services) */
+            .inner-container-services {
                 display: flex;
-                flex-direction: column;
-                flex-basis: 20em;
-                justify-content: center;
+                flex-direction: row;
+                flex-wrap: wrap;
+
+                width: 95%;
+                align-items: center;
+
+                justify-content: space-between;
                 row-gap: 1.5rem;
-                img {
-                    height: 50px;
-                    width: 50px;
-                    flex-grow: 0;
-                }
+                padding-top: 3rem;
             }
-            .case-study-image {
-                img {
-                    height: 100%;
-                }
-            }
+
 /* Media queries */
 
 @media screen and (min-width: 768px) {
